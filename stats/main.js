@@ -1,10 +1,8 @@
 const githubAPI = "https://api.github.com/graphql";
 
-const PAT = "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";
-
 const variables = {
-    name: "covaccinate",
-    owner: "Saurav-Shrivastav",
+    name: "pod-4.1.1-portfolio",
+    owner: "Aryaman1706",
     branch: "main",
     today: new Date().toISOString()
 };
@@ -50,11 +48,6 @@ const fetchCommits = async() => {
     });
     const res = await response.json();
 
-    console.log(res.data.repository.ref.target.history.edges.map(edge => ({
-        username: edge.node.author.user.login,
-        avatarURL: edge.node.author.user.avatarUrl
-    })))
-
     return {
         total: res.data.repository.ref.target.history.totalCount,
         commitHistory: res.data.repository.ref.target.history.edges.map(edge => ({
@@ -79,8 +72,6 @@ const countAndSortCommits = (commitHistory) => {
             usernameAndCount[username] = 1;
         };
     });
-
-    console.log({usernameAndAvatar, usernameAndCount})
 
     const resultantArray = [];
     Object.keys(usernameAndCount).forEach(username => {
