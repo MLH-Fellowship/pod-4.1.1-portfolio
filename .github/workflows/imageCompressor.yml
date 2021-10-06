@@ -1,0 +1,33 @@
+name: Image Compresser
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+    paths:
+      - '*.jpg'
+      - '*.jpeg'
+      - '*.png'
+      - '*.webp'
+jobs:
+  build:
+    name: calibreapp/image-actions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+
+      - name: Compress Images
+        id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push if changes
+        run: |-
+          git config --global user.email "tanmayvyas09@gmail.com"
+          git config --global user.name "tanmay000009"
+          git diff
+          git add .
+          git commit -m "Merge solution"
+          git push
