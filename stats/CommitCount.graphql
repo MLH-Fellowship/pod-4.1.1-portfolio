@@ -8,8 +8,10 @@ query CommitCount($name: String!, $owner: String!, $branch: String!, $today: Git
                         edges {
                             node {
                                 author {
-                                    name
-                                    avatarUrl
+                                    user {
+                                        login
+                                        avatarUrl
+                                    }
                                 }
                             }
                         }
