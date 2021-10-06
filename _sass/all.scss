@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import 'config';
 @import 'navbar';
 @import 'profile';
 @import 'page';
+@import 'toggle';
 
 .card-container {
     display: grid;
@@ -30,14 +32,16 @@
 
 
 body {
-    background-color: #f5f5f9;
+    background-color: var(--color-body);
     margin-bottom: 50px;
+    position: relative;
 }
 h2 {
     margin-bottom: 20px;
     margin-top: 20px;
     font-weight: 700;
     text-align: center;
+    color: var(--color-p-text);
 }
 
 .card {
@@ -45,14 +49,14 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: white;
+    background-color: var(--color-card);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
 }
 
 a {
-    color: black;
+    color: var(--color-body-text);
 }
 
 .info {
@@ -60,6 +64,7 @@ a {
         margin-top: 5px;
         margin: 0px;
         text-align: left;
+        color: var(--color-p-text);
     }
 
     .title {
@@ -74,7 +79,7 @@ a {
 
     .dates {
         font-size: small;
-        color: #404040;
+        color: var(--color-info-text);
     }
 }
 
