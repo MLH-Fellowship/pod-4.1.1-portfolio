@@ -26,9 +26,10 @@ jobs:
 
       - name: Commit and push if changes
         run: |-
-          git config --global user.email "tanmayvyas09@gmail.com"
-          git config --global user.name "tanmay000009"
           git diff
-          git add .
-          git commit -m "Image optimized"
-          git push
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: chore- resize images
+          branch-suffix: timestamp
+          commit-message: Compress Images
+          body: ${{ steps.calibre.outputs.markdown }}
