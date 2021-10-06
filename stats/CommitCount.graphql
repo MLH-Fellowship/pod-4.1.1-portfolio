@@ -1,0 +1,21 @@
+query CommitCount($name: String!, $owner: String!, $branch: String!, $today: GitTimestamp!) {
+    repository(name: $name, owner: $owner) {
+        ref(qualifiedName: $branch) {
+            target {
+                ...on Commit {
+                    history(until: $today) {
+                        totalCount
+                        edges {
+                            node {
+                                author {
+                                    name
+                                    avatarUrl
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
