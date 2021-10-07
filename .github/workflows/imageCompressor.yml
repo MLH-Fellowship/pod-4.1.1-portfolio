@@ -1,0 +1,45 @@
+name: Image Compressor
+# Run this github action, only when push is made to main branch.
+# After a pull request is merged, a push is made. So we cover this scenario as-well.
+on:
+  push:
+    branches:
+      - main
+    # And, it runs only when there are changes in files with given extension
+    paths:
+      - "**.jpg"
+      - "**.jpeg"
+      - "**.png"
+      - "**.webp"
+  # Schedule helps if some files are missed during above mentioned scenarios
+  schedule:
+    - cron: "16 19 * * 4"
+    # This is scheduled as a cron job, which runs only on thursday every week at 7:16 PM UTC.
+
+jobs:
+  build:
+    name: Intializing machine
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+
+      # Using image-actions from calibre-app
+      # Reference : https://github.com/calibreapp/image-actions
+      - name: Compressing Images
+        id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
+
+      - name: Create a Pull Request if there are changes
+        # Only create a pull request, if post-optimization there are some changes in image files
+        if: steps.calibre.outputs.markdown != ''
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Compressed Images
+          branch-suffix: timestamp
+          commit-message: Compressed Images
+          # This is auto-generated from calibre action
+          body: ${{ steps.calibre.outputs.markdown }}
