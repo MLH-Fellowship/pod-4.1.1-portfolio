@@ -1,12 +1,15 @@
 .profile {
     background-color: #133667 !important;
     text-align: center;
-    height: 320px;
+    height: 690px;
     margin-bottom: 50px;
     h1 {
         font-size: 50px;
         font-weight: 700;
         color: white;
+        position: absolute;
+        bottom: -2%;
+        left: 43%;
     }
     
     img {
