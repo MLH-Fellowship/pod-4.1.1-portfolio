@@ -35,10 +35,14 @@ body {
   height: auto;
 }
 
+.banner .logo img {
+    width: 200px;
+}
+
 .banner .title {
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
 }
 
 .page {
