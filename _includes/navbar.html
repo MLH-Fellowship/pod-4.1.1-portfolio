@@ -5,6 +5,16 @@
                 <img src="./assets/img/mlh-prep.png" />
             </div>
         </a>
-        
     </div>
 </header>
+<script>
+    window.addEventListener("scroll",function(){
+        let scrollHeight = document.body.scrollTop || document.documentElement.scrollTop;   // height
+        if(scrollHeight > 100){
+            document.getElementsByClassName("nav-bar")[0].style.top = 0;
+        }
+        else{
+            document.getElementsByClassName("nav-bar")[0].style.top = "-100px";
+        }
+    });
+</script>
