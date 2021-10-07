@@ -1,0 +1,52 @@
+#leaderboard-heading {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 0 20% 0 20%;
+}
+
+.commit-count-heading {
+    font-weight: bolder;
+}
+
+#stats-list {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: black;
+}
+  
+.stats-list-item {
+    display: flex;
+    place-items: center;
+    padding: 8px;
+}
+
+.serial-no {
+    font-weight: bold;
+    font-size: x-large;
+    margin-right: 10px;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.username {
+    margin-left: 15px;
+    font-size: large;
+}
+  

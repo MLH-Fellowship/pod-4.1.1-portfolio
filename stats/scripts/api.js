@@ -1,38 +1,3 @@
-const githubAPI = "https://api.github.com/graphql";
-
-const variables = {
-    name: "pod-4.1.1-portfolio",
-    owner: "Aryaman1706",
-    branch: "main",
-    today: new Date().toISOString()
-};
-
-const query = `
-query CommitCount($name: String!, $owner: String!, $branch: String!, $today: GitTimestamp!) {
-    repository(name: $name, owner: $owner) {
-        ref(qualifiedName: $branch) {
-            target {
-                ...on Commit {
-                    history(until: $today) {
-                        totalCount
-                        edges {
-                            node {
-                                author {
-                                    user {
-                                        login
-                                        avatarUrl
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-`;
-
 const fetchCommits = async() => {
     const response = await fetch(githubAPI, {
         method: "POST",
@@ -48,13 +13,15 @@ const fetchCommits = async() => {
     });
     const res = await response.json();
 
+    const commitHistory = res.data.repository.ref.target.history.edges.filter(commit => !!(commit.node.author.user))
+
     return {
         total: res.data.repository.ref.target.history.totalCount,
-        commitHistory: res.data.repository.ref.target.history.edges.map(edge => ({
+        commitHistory: commitHistory.map(edge => ({
             username: edge.node.author.user.login,
             avatarURL: edge.node.author.user.avatarUrl
-        }))
-    }
+        })),
+    };
 };
 
 const countAndSortCommits = (commitHistory) => {
@@ -85,10 +52,4 @@ const countAndSortCommits = (commitHistory) => {
     resultantArray.sort((a, b) => (b.commitCount - a.commitCount));
     
     return resultantArray;
-}
-
-window.addEventListener("load", async() => {
-    const apiResponse = await fetchCommits();
-    const sortedCommitHistory = countAndSortCommits(apiResponse.commitHistory);
-    console.log(sortedCommitHistory);
-});
+};
