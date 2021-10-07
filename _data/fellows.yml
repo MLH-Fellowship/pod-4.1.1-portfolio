@@ -1,15 +1,67 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- name: Arsalan
+  img: arsalan.jpg
+  location: Islamabad, Pakistan
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
+- name: Anchal
+  img: anchal.jpg
+  location: Delhi, India
 
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
+- name: Aniket
+  img: aniket.jpg
+  location: Faridabad, India
 
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- name: Aryaman
+  img: aryaman.jpg
+  location: Faridabad, India
+
+- name: Athar
+  img: athar.jpg
+  location: Delhi, India
+
+- name: Chiraag
+  img: chiraag.jpg
+  location: Jalpaiguri, India
+
+- name: Dat
+  img: dat.jpg
+  location: Vancouver, Canada
+
+- name: Devansh
+  img: devansh.jpg
+  location: Ghaziabad, India
+
+- name: Gavish
+  img: gavish.jpg
+  location: Delhi, India
+
+- name: Harshal
+  img: harshal.jpg
+  location: Banglore, India
+
+- name: Harshita
+  img: harshita.jpg
+  location: Agra, India
+
+- name: Hasna
+  img: hasna.jpg
+  location: Bangladesh
+
+- name: Hemansh
+  img: hemansh.jpg
+  location: Delhi, India
+
+- name: Lucas
+  img: lucas.jpg
+  location: Rio De Janerio, Brazil
+
+- name: Shivam
+  img: shivam.jpg
+  location: Lucknow, India
+
+- name: Swatilekha
+  img: swatilekha.jpg
+  location: Asansol, India
+
+- name: Tanmay
+  img: tanmay.jpg
+  location: Surat, India
