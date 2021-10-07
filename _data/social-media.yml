@@ -1,0 +1,33 @@
+email:
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope-square'
+
+facebook:
+  href: 'https://www.facebook.com/'
+  title: 'Facebook'
+  fa-icon: 'fa-facebook-square'
+
+twitter:
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fa-twitter-square'
+
+github:
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github-square'
+
+instagram:
+  href: 'https://www.instagram.com/'
+  title: 'Instagram'
+  fa-icon: 'fa-instagram'
+
+linkedin:
+  href: 'https://www.linkedin.com/in/'
+  title: 'LinkedIn'
+  fa-icon: 'fa-linkedin-square'
+
+portfolio:
+  title: 'Portfolio'
+  fa-icon: 'fa-globe'
