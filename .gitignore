@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 vendor
 .bundle
-stats/scripts/config.js
+assets/js/config.js
