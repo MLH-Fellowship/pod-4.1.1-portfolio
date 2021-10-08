@@ -1,9 +1,12 @@
 #map {
-    border:5px solid black;
-    height: 500px; 
+    border:5px double black;
+    height: 700px; 
     border-radius: 20px;
     width:70%;
-    margin:auto
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .marker {
