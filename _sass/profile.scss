@@ -1,12 +1,16 @@
 .profile {
   background-color: var(--color-nav) !important;
   text-align: center;
-  height: 320px;
   margin-bottom: 50px;
+  padding-bottom: 25px;
   h1 {
     font-size: 50px;
     font-weight: 700;
     color: var(--color-heading-text);
+    position: absolute;
+    bottom: -2%;
+    left: 43%;
+    display: none;
   }
 
   img {
@@ -17,10 +21,10 @@
     margin-right: auto;
     display: inline;
     padding: 20px;
+    height: 200px;
   }
 
   .profile-picture {
     margin-bottom: 30px;
-    height: 200px;
   }
 }

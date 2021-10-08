@@ -1,15 +1,134 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- name: Arsalan
+  img: arsalan.jpg
+  location: Islamabad, Pakistan
+  social-media:
+    twitter: khattakdev
+    linkedin: khattakdev
+    github: khattakdev
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
+- name: Anchal
+  img: anchal.jpg
+  location: Delhi, India
+  social-media:
+    linkedin: anchal-gupta-943123154
+    github: anchalg00
 
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
+- name: Aniket
+  img: aniket.jpg
+  location: Patiala, India
+  social-media:
+    linkedin: aniket-biswas-59394b191
+    github: aniketbiswas21
+    twitter: Aniket__21
+    instagram: aniket.biswas
 
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- name: Aryaman
+  img: aryaman.jpg
+  location: India
+  social-media:
+    twitter: aryaman1761
+    github: Aryaman1706
+    linkedin: aryaman-grover-77209b1a5
+
+- name: Athar
+  img: athar.jpg
+  location: New Delhi, India
+  social-media:
+    twitter: Athar__Mohammad
+    linkedin: athar-mohammad-34068a157
+    github: atharmohammad
+    portfolio: https://atharmohammad.github.io/Portfolio/
+
+- name: Chiraag
+  img: chiraag.jpg
+  location: India
+
+- name: Dat
+  img: dat.jpg
+  location: Vancouver, Canada
+  social-media:
+    twitter: Athar__Mohammad
+    linkedin: dattriquach1702
+    github: quachtridat
+    portfolio: https://quachtridat.github.io/
+
+- name: Devansh
+  img: devansh.jpg
+  location: Uttar Pradesh, India
+  social-media:
+    twitter: cheeniipapa
+    linkedin: devanshsingh3
+    github: Devansh3712
+
+- name: Gavish
+  img: gavish.jpg
+  location: Delhi, India
+  social-media:
+    twitter: PoddarGavish
+    linkedin: gavishpoddar
+    github: gavishpoddar
+
+- name: Harshal
+  img: harshal.jpg
+  location: Karnataka, India
+  social-media:
+    twitter: HarshalRaikwa
+    linkedin: harshal0902
+    github: Harshal0902
+    portfolio: https://harshal09.vercel.app/
+
+- name: Harshita
+  img: harshita.jpg
+  location: India
+
+- name: Hasna
+  img: hasna.jpg
+  location: Dhaka, Bangladesh
+  social-media:
+    twitter: _CipherGirl_
+    linkedin: hasna-hena-mow
+    github: CipherGirl
+    portfolio: https://ciphergirl.github.io
+    instagram: ciphergirl.dev
+
+- name: Hemansh
+  img: hemansh.jpg
+  location: Delhi, India
+  social-media:
+    linkedin: hemansh-khaneja-213116178
+    github: Hemansh31
+
+- name: Lucas
+  img: lucas.jpg
+  location: Rio De Janerio, Brazil
+  social-media:
+    linkedin: lucas-vinzon-3311b2aa
+    github: SnowPrimate
+
+- name: Shivam
+  img: shivam.jpg
+  location: Lucknow, India
+  social-media:
+    twitter: ShiviPro
+    linkedin: shivam-tewari-9286b1171
+    github: ShiviPro
+    portfolio: https://shivamtewari.netlify.app/
+
+- name: Swatilekha
+  img: swatilekha.jpg
+  location: Asansol, India
+  social-media:
+    twitter: SwatilekhaRoy2
+    linkedin: swatilekharoy
+    github: Swatilekha-Roy
+    portfolio: https://swatilekha-roy.github.io/
+    instagram: oh_laugh_hugs
+    facebook: swatilekha.roy4
+
+- name: Tanmay
+  img: tanmay.jpg
+  location: Surat, India
+  social-media:
+    twitter: TanmaySuchANoob
+    linkedin: tanmay-vyas-09
+    github: Tanmay000009

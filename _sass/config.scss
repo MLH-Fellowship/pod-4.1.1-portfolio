@@ -14,6 +14,8 @@ $banner: #1d539f;
 $banner-dark: #133667;
 $nav: #133667;
 $nav-dark: #133667;
+$footer-link-header: #ffffff80;
+$footer-link-header-dark: #ffffff;
 
 :root {
   --color-body: #{$body};
@@ -24,6 +26,7 @@ $nav-dark: #133667;
   --color-p-text: #{$p-text};
   --color-banner: #{$banner};
   --color-nav: #{$nav};
+  --color-footer-link-header: #{$footer-link-header};
 }
 
 .dark {
@@ -35,4 +38,5 @@ $nav-dark: #133667;
   --color-p-text: #{$p-text-dark};
   --color-banner: #{$banner-dark};
   --color-nav: #{$nav-dark};
+  --color-footer-link-header: #{$footer-link-header-dark};
 }
