@@ -1,0 +1,33 @@
+.user-profile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: flex-start;
+}
+
+.rank {
+    font-weight: bolder;
+    width: 100%;
+    text-align: right;
+    color: #133667;
+}
+
+.user-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.user-profile p {
+    margin: 0;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
