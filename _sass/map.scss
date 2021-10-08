@@ -1,5 +1,12 @@
 #map {
     border:5px solid black;
-    height: 500px;
+    height: 500px; 
     border-radius: 20px;
+    width:70%;
+    margin:auto
+}
+
+.marker {
+    border-radius: 50%;
+    border:2px solid black
 }

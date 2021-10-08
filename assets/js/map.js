@@ -1,33 +1,23 @@
-function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 2,
-      center: { lat: 28.6139, lng: 77.2090 },
-    });
-  
-    const tourStops = [
-      [{ lat: 28.6139, lng: 77.2090 }, "New Delhi, India"],
-      [{ lat: -22.9068, lng: -43.1729 }, "Rio de Janeiro, Brazil"],
-      [{ lat: 33.6844, lng: 73.0479 }, "Islamabad, Pakistan"],
-      [{ lat: 12.9165, lng: 79.1325 }, "Vellore, India"],
-    ];
+var map = L.map('map').setView([28.6139,77.2090], 5);
 
-    // Create an info window to share between markers.
-    const infoWindow = new google.maps.InfoWindow();
-  
-    // Create the markers.
-    tourStops.forEach(([position, title], i) => {
-      const marker = new google.maps.Marker({
-        position,
-        map,
-        title: `${i + 1}. ${title}`,
-        label: `${i + 1}`,
-        optimized: false,
-      });
-  
-      marker.addListener("click", () => {
-        infoWindow.close();
-        infoWindow.setContent(marker.getTitle());
-        infoWindow.open(marker.getMap(), marker);
-      });
-    });
-  }
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiYXRoYXJtb2hhbW1hZCIsImEiOiJja3VoeXU0eDQwNHo2Mm9ydmh5bWZuODh6In0.GJzuMwgTS7Ri1Kn8yizuFQ'
+}).addTo(map);
+
+var marker = L.icon({
+  iconUrl: `/assets/img/aaron.jpg`,
+  iconSize: [50, 50], // size of the icon
+  iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+  popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+  className: 'marker',
+});
+
+L.marker([28.6139,77.2090], {
+  icon: marker,
+})
+  .addTo(map)
