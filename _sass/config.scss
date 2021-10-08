@@ -1,0 +1,42 @@
+$body: #f5f5f9;
+$body-dark: #161f29;
+$card-bg: #ffffff;
+$card-bg-dark: #1e2732;
+$body-text: #000000;
+$body-text-dark: #ffffff;
+$heading-text: #ffffff;
+$heading-text-dark: #ffffff;
+$info-text: #404040;
+$info-text-dark: #ffffff;
+$p-text: #212529;
+$p-text-dark: #ffffff;
+$banner: #1d539f;
+$banner-dark: #133667;
+$nav: #133667;
+$nav-dark: #133667;
+$footer-link-header: #ffffff80;
+$footer-link-header-dark: #ffffff;
+
+:root {
+  --color-body: #{$body};
+  --color-card: #{$card-bg};
+  --color-body-text: #{$body-text};
+  --color-heading-text: #{$heading-text};
+  --color-info-text: #{$info-text};
+  --color-p-text: #{$p-text};
+  --color-banner: #{$banner};
+  --color-nav: #{$nav};
+  --color-footer-link-header: #{$footer-link-header};
+}
+
+.dark {
+  --color-body: #{$body-dark};
+  --color-card: #{$card-bg-dark};
+  --color-body-text: #{$body-text-dark};
+  --color-heading-text: #{$heading-text-dark};
+  --color-info-text: #{$info-text-dark};
+  --color-p-text: #{$p-text-dark};
+  --color-banner: #{$banner-dark};
+  --color-nav: #{$nav-dark};
+  --color-footer-link-header: #{$footer-link-header-dark};
+}
