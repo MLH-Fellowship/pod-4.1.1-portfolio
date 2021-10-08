@@ -13,8 +13,9 @@ layout: default
             {{ page.title }}
         </div>
     </div>
+  </div>
 </div>
 
-<div class="container page">
-    {{ content }}
-</div>
+<div class="container page">{{ content }}</div>
+
+{% include toggle.html %}
