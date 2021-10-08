@@ -1,0 +1,23 @@
+#map {
+    border:10px double black;
+    height: 700px; 
+    border-radius: 20px;
+    width:70%;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.marker {
+    border-radius: 50%;
+    border:2px solid black
+}
+
+@media only screen and (max-width: 500px) {
+    #map {
+        height: 400px; ;
+        width: 100%;
+    }
+}

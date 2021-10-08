@@ -7,34 +7,34 @@
     position: fixed;
     top:-100px;     // shifting above the window
     transition: 0.3s top ease;      // for animation
-    z-index: 1;     // to make the navbar come at the front
+    z-index: 5;     // to make the navbar come at the front
 }
 
 .nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+  display: inline-flex;
+  height: 60%;
+  width: 350px;
 }
 
 .nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
+  height: 60px;
+  margin: auto;
 }
 
 .nav-logo {
-    display: flex;
-    align-items: left;
-    justify-content: left;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 
 .nav-logo img {
-    width: 200px;
+  width: 200px;
 }
 
 .nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 0px;
+  padding-right: 0px;
 }
