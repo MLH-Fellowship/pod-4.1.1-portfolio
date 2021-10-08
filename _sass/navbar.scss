@@ -1,13 +1,13 @@
 .nav-bar {
-    width: 100%;
-    background-color: #133667;
-    font-family: "Poppins", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
-    position: fixed;
-    top:-100px;     // shifting above the window
-    transition: 0.3s top ease;      // for animation
-    z-index: 5;     // to make the navbar come at the front
+  width: 100%;
+  background-color: #133667;
+  font-family: "Poppins", serif;
+  font-weight: 700 !important;
+  padding-top: 10px;
+  position: fixed;
+  top: -100px; // shifting above the window
+  transition: 0.3s top ease; // for animation
+  z-index: 5; // to make the navbar come at the front
 }
 
 .nav-content .logo-touch-target {
@@ -37,4 +37,17 @@
   text-align: right;
   padding-top: 0px;
   padding-right: 0px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(23, 22, 22);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s linear;
 }
