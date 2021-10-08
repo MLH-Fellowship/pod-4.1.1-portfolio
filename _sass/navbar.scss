@@ -1,13 +1,13 @@
 .nav-bar {
-  width: 100%;
-  background-color: var(--color-nav);
-  font-family: "Poppins", serif;
-  font-weight: 700 !important;
-  padding-top: 10px;
-  position: fixed;
-  top: -100px; // shifting above the window
-  transition: 0.3s top ease; // for animation
-  z-index: 1; // to make the navbar come at the front
+    width: 100%;
+    background-color: #133667;
+    font-family: "Poppins", serif;
+    font-weight: 700 !important;
+    padding-top: 10px;
+    position: fixed;
+    top:-100px;     // shifting above the window
+    transition: 0.3s top ease;      // for animation
+    z-index: 5;     // to make the navbar come at the front
 }
 
 .nav-content .logo-touch-target {
