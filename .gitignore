@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 vendor
 .bundle
-assets/js/config.js
+assets/js/accessToken.js
