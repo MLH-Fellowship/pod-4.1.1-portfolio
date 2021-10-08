@@ -1,8 +1,8 @@
 .profile {
     background-color: #133667 !important;
     text-align: center;
-    height: 690px;
     margin-bottom: 50px;
+    padding-bottom: 25px;
     h1 {
         font-size: 50px;
         font-weight: 700;
@@ -18,12 +18,12 @@
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: inline;        
+        display: inline;
         padding: 20px;
+        height: 200px;
     }
     
     .profile-picture {
         margin-bottom: 30px;
-        height: 200px;
     }
 }
