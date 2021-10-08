@@ -42,6 +42,9 @@
 - name: Chiraag
   img: chiraag.jpg
   location: India
+  social-media: 
+    linkedin: chiraag-kakar
+    github: chiraag-kakar
 
 - name: Dat
   img: dat.jpg
@@ -80,6 +83,11 @@
 - name: Harshita
   img: harshita.jpg
   location: India
+  social-media: 
+    github: harshita130602
+    linkedin: harshita-upadhyay-19b4471a2
+    instagram: harshita_upadhyay_
+    facebook: harshita130602
 
 - name: Hasna
   img: hasna.jpg
