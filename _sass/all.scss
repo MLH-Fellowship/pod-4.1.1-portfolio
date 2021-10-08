@@ -4,6 +4,9 @@
 @import 'profile';
 @import 'page';
 
+html{
+  height: 100%;
+}
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
