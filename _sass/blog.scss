@@ -1,8 +1,7 @@
-
-
-* {
-    justify-content: center;
-
+.head {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-weight: 900;
 }
 
 .blog-title {
@@ -10,6 +9,22 @@
 }
 
 .blog-text {
-    color: white;
+    color: black;
 }
+
+ul {
+    list-style-type: none;
+    align-content:center;
+}
+li {
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+    align-items: center;
+    margin: 20px;
+    background-color: var(--color-card);
+    border-radius: 0.375rem;
+    padding: 1.5em;
+    font-size: 1.2em;
+  }
 
