@@ -35,7 +35,6 @@ $viewer-distance: 500px;
 			width: 260px !important;
 			box-sizing: border-box;
 			padding: 0 $item-separation / 2;
-            opacity: 0.89;
 			border-radius: 50%;
 			&:not(:first-of-type) {
 				position: absolute;
@@ -45,7 +44,7 @@ $viewer-distance: 500px;
 		}
 
         .pod-img:hover,.pod-img:active {
-            opacity: 1;
+            box-shadow: antiquewhite;
         }
 	}
 	

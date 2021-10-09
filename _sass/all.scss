@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import 'navbar';
-@import 'profile';
-@import 'page';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import "config";
+@import "navbar";
+@import "profile";
+@import "page";
+@import "toggle";
+@import 'map';
 
-html{
+html {
   height: 100%;
 }
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Open Sans", sans-serif;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -31,11 +34,10 @@ html{
   }
 }
 
-
 body {
-    background-color: #f5f5f9;
-    margin-bottom: 50px;
-    font-size: 1.2rem;
+  background-color: var(--color-body);
+  margin-bottom: 50px;
+  position: relative;
 }
 
 h2 {
@@ -47,50 +49,56 @@ h2 {
 }
 
 .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 30px;
-    background-color: white;
-    border-radius: .375rem;
-    padding: 1.5em;
-    font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 30px;
+  background-color: var(--color-card);
+  border-radius: 0.375rem;
+  padding: 1.5em;
+  font-size: 1.2em;
 }
 
 a {
-    color: black;
+  color: var(--color-body-text);
 }
 
 .info {
-    p {
-        margin-top: 5px;
-        margin: 0px;
-        text-align: left;
-    }
+  p {
+    margin-top: 5px;
+    margin: 0px;
+    text-align: left;
+    color: var(--color-p-text);
+  }
 
-    .title {
-        font-size: 500;
-        font-weight: bold;
-    }
+  .title {
+    font-size: 500;
+    font-weight: bold;
+  }
 
-    .location, .description {
-        font-size: medium;
-        font-weight: 400;
-    }
+  .location,
+  .description {
+    font-size: medium;
+    font-weight: 400;
+  }
 
-    .dates {
-        font-size: small;
-        color: #404040;
-    }
+  .dates {
+    font-size: small;
+    color: var(--color-info-text);
+  }
 }
 
 .icon {
-    width: 70px;
-    height: 70px;
-    margin-right: 20px;
-    padding: 10px;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  padding: 10px;
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
+}
+
+.footer-links-header {
+  color: var(--color-footer-link-header);
 }
