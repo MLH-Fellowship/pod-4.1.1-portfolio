@@ -101,9 +101,3 @@ a {
 .footer-links-header {
   color: var(--color-footer-link-header);
 }
-
-@media only screen and (max-width: 500px) {
-  .footer-links-header {
-    font-size:12px;
-  } /*1rem = 16px*/
-}
