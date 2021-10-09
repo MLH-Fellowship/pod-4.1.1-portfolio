@@ -5,7 +5,7 @@
     font-weight: 700 !important;
     padding-top: 10px;
     position: fixed;
-    top:-100px;     // shifting above the window
+    top: 0px;     // shifting above the window
     transition: 0.3s top ease;      // for animation
     z-index: 5;     // to make the navbar come at the front
 }
@@ -17,8 +17,8 @@
 }
 
 .nav-content .nav-logo {
-  height: 60px;
-  margin: auto;
+    height: 70px;
+    margin: auto;
 }
 
 .nav-logo {
@@ -37,4 +37,22 @@
   text-align: right;
   padding-top: 0px;
   padding-right: 0px;
+}
+
+/* Navbar Pod Name */
+.pod-name {
+    color: rgba(255, 255, 255, 0.692);
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin: 1% 3% 2% 3% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .pod-name {
+        font-size: 1.8rem;
+    }
+
+    .nav-logo img {
+        width: 150px;
+    }
 }
