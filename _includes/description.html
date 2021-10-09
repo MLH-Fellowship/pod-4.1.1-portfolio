@@ -10,6 +10,7 @@
     {% for item in site.data.fellows %}
     <div class="card">
       <div class="info">
+        <img src="./assets/img/{{ item.img }}">
         <p class="title">{{ item.name }}</p>
         <p class="location">{{ item.location }}</p>
         {% if site.data.social-media %}
