@@ -1,30 +1,105 @@
-.profile {
-  background-color: var(--color-nav) !important;
-  text-align: center;
-  margin-bottom: 50px;
-  padding-bottom: 25px;
+// Carousel configuration parameters
+$item-width: 30%; // Now we can use percentages!
+$item-separation: 0px; // This now is set with Js
+$viewer-distance: 500px;
+
+.carousel {
+	padding: 20px;
+    margin-top: 5%;
+    padding-top: 5%;
+	perspective: $viewer-distance;
+	overflow: hidden;
+	background-color: #133667;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> * {
+		flex: 0 0 auto;
+	}
+
+    h1 {
+        color: rgba(255, 255, 255, 0.842);
+        font-weight: 500;
+        font-size: 2.8rem;
+        margin-bottom: 4%;
+    }
+	
+	figure {
+		margin: 0;
+		
+		width: $item-width;
+		transform-style: preserve-3d;
+		transition: transform 0.5s;
+		
+		.pod-img {
+			width: 260px !important;
+			box-sizing: border-box;
+			padding: 0 $item-separation / 2;
+			border-radius: 50%;
+			&:not(:first-of-type) {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+	
+	.profile-nav {
+		display: flex;
+		justify-content: center;
+		margin: 85px 0 0;
+		
+		button {
+			flex: 0 0 auto;
+			margin: 0 15px;
+			border-radius: 30px;
+            padding: 8px 25px;
+			cursor: pointer;
+			background-color: rgba(240, 248, 255, 0.158);
+			color: rgb(243, 243, 243);
+			outline: rgb(243, 243, 243);
+			border: 1px solid;
+			letter-spacing: 1px;
+		}
+
+        button:hover,button:active,button:focus {
+            background-color: rgb(243, 243, 243);
+            outline: #0554c4;
+            color: #133667;
+            font-weight: 400;
+        }
+	}
+	
+}
+
+@media only screen and (max-width: 600px)
+{
+  .carousel img {
+    max-width : 230px !important;
+  }
+
+  .carousel {
+    padding-top: 10%;
+    margin-top: 0 !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .profile-nav {
+      display: block !important;
+	  margin-top: 39px !important;
+  }
+
+  .profile-nav button {
+    margin-top: 4% !important;
+  }
+
+  figure {
+    margin-top: 18% !important;
+  }
+
   h1 {
-    font-size: 50px;
-    font-weight: 700;
-    color: var(--color-heading-text);
-    position: absolute;
-    bottom: -2%;
-    left: 43%;
-    display: none;
-  }
-
-  img {
-    border-radius: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline;
-    padding: 20px;
-    height: 200px;
-  }
-
-  .profile-picture {
-    margin-bottom: 30px;
+    margin-top: 20% !important;
+    margin-bottom: 0 !important;
   }
 }
