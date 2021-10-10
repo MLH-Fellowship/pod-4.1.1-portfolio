@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<style>
+    .pod-img {
+        border-radius: 50%;
+    }
+</style>
+
+<div class="banner">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/img/mlh-prep.png"/>
+            </a>
+        </div>
+        <div class="title">
+            {{ page.title }}
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container page">{{ content }}</div>
+
+{% include toggle.html %}
+{% include footer.html %}
