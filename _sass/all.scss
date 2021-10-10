@@ -72,6 +72,11 @@ a {
     color: var(--color-p-text);
   }
 
+  .card-img{
+    border-radius: 50%;
+    width: 150px;
+  }
+
   .title {
     font-size: 500;
     font-weight: bold;
