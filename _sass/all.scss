@@ -65,6 +65,9 @@ a {
 }
 
 .info {
+  display: grid;
+  place-items: center;
+  
   p {
     margin-top: 5px;
     margin: 0px;
