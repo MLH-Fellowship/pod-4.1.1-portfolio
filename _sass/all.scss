@@ -54,7 +54,8 @@ h2 {
   align-items: center;
   margin: 20px 30px;
   background-color: var(--color-card);
-  border-radius: 0.375rem;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
   padding: 1.5em;
   font-size: 1.2em;
 }
@@ -64,11 +65,20 @@ a {
 }
 
 .info {
+  display: grid;
+  place-items: center;
+  margin-left: 55px;
+
   p {
     margin-top: 5px;
     margin: 0px;
     text-align: left;
     color: var(--color-p-text);
+  }
+
+  .card-img{
+    border-radius: 50%;
+    width: 150px;
   }
 
   .title {
