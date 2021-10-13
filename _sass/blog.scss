@@ -1,0 +1,28 @@
+.head {
+    margin-top: 10%;
+    margin-left: 20%;
+    font-weight: 900;
+    color: #133667 !important;
+}
+
+.blog-text {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 10%;
+}
+li {
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+    justify-self: center;
+    align-items: center;
+    margin: 20px;
+    background-color: var(--color-card);
+    border-radius: 0.375rem;
+    padding: 1.5em;
+    font-size: 1.2em;
+  }
+

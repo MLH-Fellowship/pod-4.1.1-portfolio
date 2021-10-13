@@ -6,6 +6,7 @@
 @import "page";
 @import "toggle";
 @import 'map';
+@import 'blog';
 
 html {
   height: 100%;
@@ -113,30 +114,8 @@ a {
   color: var(--color-footer-link-header);
 }
 
-.footer-img {
-  width: 70%;
+.blog-text {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 80%;
 }
-
-
-@media only screen and (max-width: 1000px) {
-  .footer-img {
-    width: 300px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .footer-img {
-    width: 200px;
-  }
-
-  .footer-subtitle{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-
-
-
-
